@@ -16,5 +16,8 @@ def func5(arg):
 def func6(arg):
   print("super arg {0}".format(arg))
 
+def func7(arg):
+  print("super arg {0}".format(arg))
+
 func("bla")
 
