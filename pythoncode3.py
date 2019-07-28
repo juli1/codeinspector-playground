@@ -21,7 +21,7 @@ def func7(arg):
 
 def func7(arg, arg2):
     """
-    blabla
+    blabla2
     :arg: bla
     """
     print("super arg {0}".format(arg))
