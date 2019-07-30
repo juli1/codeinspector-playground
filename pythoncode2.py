@@ -40,6 +40,14 @@ def func9(arg, arg2):
   """
   print("super arg {0}".format(arg))
 
+def func10(arg, arg2):
+  """
+  blabla
+  :arg: bla
+  """
+  print("super arg {0}".format(arg))
+
+
 
 
 func("bla")
