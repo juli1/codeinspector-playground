@@ -78,4 +78,4 @@ def func2(arg):
 func("bla")
 
 
-func("bli")
+func("bl")
