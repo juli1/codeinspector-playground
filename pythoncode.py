@@ -52,4 +52,5 @@ def func2(arg):
 
 func("bla")
 func2("bla")
+func2("bla")
 
