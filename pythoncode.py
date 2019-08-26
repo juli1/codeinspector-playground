@@ -9,4 +9,5 @@ def func3(arg):
 
 func("bla")
 func2("bla2")
+func2("bla2")
 
