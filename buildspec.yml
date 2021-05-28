@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+      - apt-get install apt-transport-https gnupg -y
+      - pip install code-inspector
+    finally:
+      - echo Preliminary tasks done
+  pre_build:
+    commands:
+      - echo "CODEBUILD_SOURCE_VERSION"
+      - echo $CODEBUILD_SOURCE_VERSION
+      - echo "CODEBUILD_RESOLVED_SOURCE_VERSION"
+      - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
+      - code-inspector-check-quality --project codeinspector-playground --min-quality-score 30  --sha $CODEBUILD_SOURCE_VERSION --max-timeout-sec 60
+    finally:
+      - echo pre-build done
+  build:
+    commands:
+      - echo hello
+    finally:
+      - echo build done
+  post_build:
+    commands:
+      - echo Entered the post_build phase...
+      - echo Build completed on `date`
