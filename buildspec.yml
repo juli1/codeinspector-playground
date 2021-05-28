@@ -14,7 +14,7 @@ phases:
       - echo $CODEBUILD_SOURCE_VERSION
       - echo "CODEBUILD_RESOLVED_SOURCE_VERSION"
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
-      - code-inspector-check-quality --project codeinspector-playground --min-quality-score 30  --sha $CODEBUILD_SOURCE_VERSION --max-timeout-sec 60
+      - code-inspector-check-quality --project codeinspector-playground --min-quality-score 30  --sha "${CODEBUILD_SOURCE_VERSION}" --max-timeout-sec 60
     finally:
       - echo pre-build done
   build:
