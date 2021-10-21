@@ -10,7 +10,7 @@ jobs:
       uses: codeinspectorio/github-action@juli1/use-api-token
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        code_inspector_access_key: ${{ secrets.CODE_INSPECTOR_API_TOKEN }}
+        code_inspector_api_token: ${{ secrets.CODE_INSPECTOR_API_TOKEN }}
         min_quality_grade: 'WARNING'
         min_quality_score: '90'
         max_defects_rate: '0.2'
