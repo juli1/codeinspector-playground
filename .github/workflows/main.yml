@@ -12,7 +12,7 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         codiga_api_token: ${{ secrets.CODIGA_API_TOKEN }}
         min_quality_grade: 'WARNING'
-        min_quality_score: '90'
+        min_quality_score: '40'
         max_defects_rate: '0.2'
         max_complex_functions_rate: '0.0001'
         max_long_functions_rate: '0.0001'
