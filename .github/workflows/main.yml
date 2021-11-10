@@ -3,14 +3,14 @@ on: [push]
 jobs:
   check-quality:
     runs-on: ubuntu-latest
-    name: Code Inspector Check
+    name: codiga
     steps:
     - name: Check code meets quality standards
-      id: code-inspector
-      uses: codeinspectorio/github-action@juli1/use-api-token
+      id: codiga
+      uses: codiga/github-action@v1
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        code_inspector_api_token: ${{ secrets.CODE_INSPECTOR_API_TOKEN }}
+        codiga_api_token: ${{ secrets.CODIGA_API_TOKEN }}
         min_quality_grade: 'WARNING'
         min_quality_score: '90'
         max_defects_rate: '0.2'

@@ -1,70 +1,17 @@
-import logging
 
-def func(arg):
-  logging.info("blabla {0}".format(arg))
-  print("super arg {0}".format(arg))
-
-def func2(arg):
-  print("super arg {0}".format(arg))
-
-def func3(arg):
-  print("super arg {0}".format(arg))
-
-def func4(arg):
-  print("super arg {0}".format(arg))
-
-def func5(arg):
-  print("super arg {0}".format(arg))
-
-def func6(arg):
-  print("super arg {0}".format(arg))
-
-def func7(arg):
-  print("super arg {0}".format(arg))
-
-def func8(arg):
-  print("super arg {0}".format(arg))
-
-def func9(arg):
-  print("super arg {0}".format(arg))
-
-def func10(arg):
-  print("super arg {0}".format(arg))
+with open("/path/to/your/file", mode="r", encoding="utf-8") as file_handler:
+  lines = file_handler.readlines()
+  for line in lines:
+    print(line)
 
 
-def func7(arg, arg2):
-  """
-  blabla
-  :arg: bla
-  """
-  print("super arg {0}".format(arg))
+with open('foobar', mode ='r') as file:
+  # reading the CSV file
+  csvFile = csv.DictReader(file)
 
-def func8(arg, arg2):
-  """
-  blabla
-  :arg: bla
-  """
-  print("super arg {0}".format(arg))
-
-def func9(arg, arg2):
-  """
-  blabla
-  :arg: bla
-  """
-  print("super arg {0}".format(arg))
-
-def func12(arg, arg2):
-  print("super arg {0}".format(arg))
-
-def func10(arg, arg2):
-  """
-  blabla
-  :arg: bla
-  """
-  print("super arg {0}".format(arg))
+  # displaying the contents of the CSV file
+  for lines in csvFile:
+    print(lines)
 
 
-
-
-func("bla")
-
+bla
