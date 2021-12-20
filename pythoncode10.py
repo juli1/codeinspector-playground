@@ -1,5 +1,4 @@
 import logging
-
 def func(arg):
   logging.info("blabla {0}".format(arg))
   print("super arg {0}".format(arg))
