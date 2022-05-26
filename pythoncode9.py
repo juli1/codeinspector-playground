@@ -32,5 +32,8 @@ def func10(arg):
 def func10(arg):
   print("super arg {0}".format(arg))
 
+def func11(arg):
+  print("super arg {0}".format(arg))
+
 func("bla")
 
