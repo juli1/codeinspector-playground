@@ -1,3 +1,4 @@
+from ast import literal_eval
 import logging
 
 def func(arg):
@@ -55,15 +56,24 @@ def func9(arg, arg2):
 def func12(arg, arg2):
   print("super arg {0}".format(arg))
 
-def func10(arg, arg2):
-  """
-  blabla
-  :arg: bla
-  """
-  print("super arg {0}".format(arg))
+
+raise NotImplemented
+
+
+arr = []
+
+for i in range(len(arr)):
+  print(arr[i])
+
+
+import hashlib
+
+v = hashlib.new('md5')
 
 
 
+literal_eval("weoifjw")
 
-func("bla")
+
+exit(0)
 

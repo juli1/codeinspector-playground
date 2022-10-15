@@ -1,54 +1,39 @@
-def func(arg):
-  print("super arg {0}".format(arg))
+# Get the service resource.
+dynamodb = boto3.resource('dynamodb')
+# Create the DynamoDB table.
+table = dynamodb.create_table(
+  TableName='table',
+  KeySchema=[
+    {
+      'AttributeName': 'attribute_name',
+      'KeyType': 'HASH'
+    },
+    {
+      'AttributeName': 'attribute_name',
+      'KeyType': 'RANGE'
+    }
+  ],
+  AttributeDefinitions=[
+    {
+      'AttributeName': 'attribute_name',
+      'AttributeType': 'S'
+    },
+    {
+      'AttributeName': 'attribute_name',
+      'AttributeType': 'S'
+    },
+  ],
+  ProvisionedThroughput={
+    'ReadCapacityUnits': 5,
+    'WriteCapacityUnits': 5
+  }
+)
+# Wait until the table exists.
+table.wait_until_exists()
+# Print out some data about the table.
+print(table.item_count)
 
-def func2(arg):
-  print("super arg {0}".format(arg))
-
-def func3(arg):
-  print("super arg {0}".format(arg))
-
-def func4(arg):
-  print("super arg {0}".format(arg))
-
-def func5(arg):
-  print("super arg {0}".format(arg))
-
-def func6(arg):
-  print("super arg {0}".format(arg))
-
-def func7(arg):
-  print("super arg {0}".format(arg))
-
-def func7(arg, arg2):
-  """
-  blabla
-  :arg: bla
-  """
-  print("super arg {0}".format(arg))
-
-def func8(arg, arg2):
-  """
-  blabla
-  :arg: bla
-  """
-  print("super arg {0}".format(arg))
-
-def func9(arg, arg2):
-  """
-  blabla
-  :arg: bla
-  """
-  print("super arg {0}".format(arg))
-
-def func10(arg, arg2):
-  """
-  blabla
-  :arg: bla
-  """
-  print("super arg {0}".format(arg))
+import requests
 
 
-
-
-func("bla")
-
+requests.get("woeifjwe")
