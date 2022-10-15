@@ -2,7 +2,6 @@ from ast import literal_eval
 import logging
 
 def func(arg):
-  logging.info("blabla {0}".format(arg))
   print("super arg {0}".format(arg))
 
 def func2(arg):
@@ -32,6 +31,7 @@ def func9(arg):
 def func10(arg):
   print("super arg {0}".format(arg))
 
+<<<<<<< HEAD
 def func7(arg, arg2):
   """
   blabla
@@ -71,6 +71,8 @@ import hashlib
 v = hashlib.new('md5')
 
 
+=======
+>>>>>>> fcf4db0e18faa68f01058e6a1c63867c579bb8ce
 
 literal_eval("weoifjw")
 
