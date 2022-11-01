@@ -3,3 +3,4 @@ rulesets:
   - python-best-practices
   - python-code-style
   - python-inclusive
+  - first-ruleset
