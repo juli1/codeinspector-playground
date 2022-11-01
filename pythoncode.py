@@ -1,9 +1,4 @@
 
 
-
-def func(weoifjwe, ewr=[]):
-  weoifjwe
-
-
-assert bla 
- 
+number = 42
+print(f"my number is: {number}")
