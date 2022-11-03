@@ -4,4 +4,5 @@ rulesets:
   - python-code-style
   - python-inclusive
   - first-ruleset
+  - python-templates
   - try-block-two
