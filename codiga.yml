@@ -5,3 +5,4 @@ rulesets:
   - python-inclusive
   - first-ruleset
   - python-templates
+  - javascript-ruleset
