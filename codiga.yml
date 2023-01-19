@@ -1,8 +1,7 @@
 rulesets:
-  - python-security
+  - apollo-graphql-client-javascript
+  - react-best-practices
   - python-best-practices
+  - python-security
   - python-code-style
-  - python-inclusive
   - first-ruleset
-  - python-templates
-  - javascript-ruleset

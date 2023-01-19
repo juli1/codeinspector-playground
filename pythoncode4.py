@@ -1,18 +1,6 @@
-import os
-import shutil
-import csv
+import requests
 
 
+requests.get("https://service.ext", timeout=5, verify=False)
 
-
-shutil.copy("owiejfoweijf", "oweijfoweijf")
-
-
-
-weoijwefiwejfwoeifjwoeifjwoeijf
-weoijwefiwejfwoeifjwoeifjwoeijfwoeifj
-weoijwefiwejfwoeifjwoeifjwoeijfoefij
-woefijw
-eofijw
-eofijwef
 
