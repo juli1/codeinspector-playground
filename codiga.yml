@@ -5,3 +5,9 @@ rulesets:
   - python-security
   - python-code-style
   - first-ruleset
+
+ignore:
+  - first-ruleset:
+      no-empty-array-as-parameter:
+        - prefix:
+            - empty-parameters.py
