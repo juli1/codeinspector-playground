@@ -8,6 +8,6 @@ rulesets:
 
 ignore:
   - first-ruleset:
-      no-empty-array-as-parameter:
+      - no-empty-array-as-parameter:
         - prefix:
             - empty-parameters.py
